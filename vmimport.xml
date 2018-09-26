@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="plugin" group="system" method="upgrade">
+	<name>VM Product Import</name>
+	<author>JoomDev</author>
+	<creationDate>9th Feb 2018</creationDate>
+	<copyright>Copyright 2016 www.joomdev.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@joomdev.com</authorEmail>
+	<authorUrl>http://www.joomdev.com</authorUrl>
+	<version>1.1</version>
+	<description><![CDATA[VM Product Import should be installed using the standard Joomla! Installer. Once installed properly, you should see VM Product Import listed under Joomla’s Plugin Manager. <br> <br> For support related to the plugin please visit <a href="https://www.joomdev.com/forum" target="_blank">https://www.joomdev.com/forum</a>]]></description>
+	<scriptfile>script.install.php</scriptfile>
+   <files>
+		<filename plugin="vmimport">vmimport.php</filename>
+		<folder>vmimport</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+	<fields name="params">
+	  <fieldset name="basic" label="PLG_SYSTEM_VMIMPORT_BASIC_OPTION" description="" >	
+		  <field name="showProductImage" type="list" default="1"
+			  label="PLG_SYSTEM_VMIMPORT_SHOW_PRODUCT_IMAGE"
+			  description="PLG_SYSTEM_VMIMPORT_SHOW_PRODUCT_IMAGE_DESCRIPTION">
+			  <option value="1">Show</option>
+			  <option value="0">Hide</option>
+		  </field>
+		  <field name="showProductTitle" type="list" default="1"
+			  label="PLG_SYSTEM_VMIMPORT_SHOW_PRODUCT_TITLE"
+			  description="PLG_SYSTEM_VMIMPORT_SHOW_PRODUCT_TITLE_DESCRIPTION">
+			  <option value="1">Show</option>
+			  <option value="0">Hide</option>
+		  </field>
+		  
+		  <field name="title_color" type="color" 
+		  default="#000000" 
+		  label="VMIMPORT_PARAMS_PRODUCT_LINK_COLOR" 
+		  description="VMIMPORT_PARAMS_PRODUCT_LINK_COLOR"/>
+		  
+		  <field name="spacer1" type="spacer"	hr="true"/>
+		  <field name="showProductDescription" type="list" default="1"
+			  label="PLG_SYSTEM_VMIMPORT_SHOW_PRODUCT_DESCRIPTION"
+			  description="PLG_SYSTEM_VMIMPORT_SHOW_PRODUCT_DES_DESCRIPTION">
+			  <option value="1">Show</option>
+			  <option value="0">Hide</option>
+		  </field>
+		  
+		  <field name="desc_color" type="color"
+		  default="#000000" 
+		  label="VMIMPORT_PARAMS_PRODUCT_DSC_COLOR" 
+		  description="VMIMPORT_PARAMS_PRODUCT_DSC_COLOR"/>
+		  
+		  <field name="spacer2" type="spacer"	hr="true"/>
+		  
+		  
+		  <field name="showAddToCartButton" type="list" default="1"
+			  label="PLG_SYSTEM_VMIMPORT_SHOW_ADD_TO_CART_BUTTON"
+			  description="PLG_SYSTEM_VMIMPORT_SHOW_ADD_TO_CART_BUTTON_DESCRIPTION">
+			  <option value="1">Show</option>
+			  <option value="0">Hide</option>
+		  </field>
+			<field name="showProductDetailsLink" type="list" default="1"
+			  label="PLG_SYSTEM_VMIMPORT_SHOW_PRODUCT_DETAILS_LINK"
+			  description="PLG_SYSTEM_VMIMPORT_SHOW_PRODUCT_DETAILS_LINK_DESCRIPTION">
+			  <option value="1">Show</option>
+			  <option value="0">Hide</option>
+		  </field>  	
+			<field name="hshc_link_details"
+			type="text" default="Product Details" 
+			label="VMIMPORT_PARAMS_PRODUCT_DETAILS" 
+			description="VMIMPORT_PARAMS_PRODUCT_DETAILS_TOOLTIP"/>		
+			<field name="hshc_link_details_color" 
+			type="color" default="#ffab40" 
+			label="VMIMPORT_PARAMS_PRODUCT_DETAILS_LINK_COLOR" 
+			description="VMIMPORT_PARAMS_PRODUCT_DETAILS_LINK_COLOR"/>	
+			<field name="spacer3" type="spacer"	hr="true"/>
+			<field name="temes_style_size" type="list" default="0" label="VMIMPORT_PARAMS_PRODUCT_TEMES_CARD_SIZE" description="VMIMPORT_PARAMS_PRODUCT_TEMES_CARD_SIZE">
+					<option value="300">VMIMPORT_PARAMS_PRODUCT_TEMES_CARD_SIZE_SMALL</option>
+					<option value="400">VMIMPORT_PARAMS_PRODUCT_TEMES_CARD_SIZE_MEDIUM</option>
+                    <option value="500">VMIMPORT_PARAMS_PRODUCT_TEMES_CARD_SIZE_LARGE</option>
+            </field>			
+	  </fieldset>
+	</fields>	
+	</config>	
+</extension>
